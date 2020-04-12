@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>My FirstPython CGI Server</title>
+</head>
+<body>
+  <p> This is a super simple Python CGI server.
+    <br>
+    When you enter text in the name field below,
+    <br>
+    the client will use the HTML POST method to
+    <br>
+    send that text back to the server. The server
+    <br>
+    will then call a python script which access the
+    <br>
+    the text, parses it and sends a response as HTML.
+  </p>
+  <form action="/cgi-bin/greeting.py" method="POST">
+    <p>
+      <label for="Name">Your Name: </label>
+      <input type="text"  id="Name" name="name">
+      <input type="submit" value="submit">
+  </p>
+  </form>
+</body>
+</html>
